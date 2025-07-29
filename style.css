@@ -1,0 +1,50 @@
+body {
+ margin: 0;
+  padding: 0;
+  height: 100vh;
+ font-family: Arial, sans-serif;
+  text-align: center;
+  margin-top: 50px;
+  background: #404040;
+
+}
+
+.weather-container {
+  background:grey;
+  padding: 20px;
+  margin: auto;
+  max-width: 400px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+input {
+  padding: 10px;
+  width: 90%;
+  margin-bottom: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  cursor: pointer;
+} 
+.loader {
+  border: 6px solid #f3f3f3;
+  border-top: 6px solid #00bcd4;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+  margin: 20px auto;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+#weatherResult {
+  margin-top: 20px;
+  font-size: 18px;
+}
